@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port=9898 --open --host --force",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.44.5",
+    "vue-router": "^4.1.4"
+  },
+  "devDependencies": {
+    "moo-ui": "workspace:*",
+    "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-vue-layouts": "^0.7.0"
+  }
+}

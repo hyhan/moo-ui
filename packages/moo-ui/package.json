@@ -1,0 +1,44 @@
+{
+  "name": "moo-ui",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Moo-UI",
+  "author": "hyhan <https://github.com/hyhan>",
+  "license": "MIT",
+  "homepage": "https://github.com/hyhan/moo-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyhan/moo-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hyhan/moo-ui/issues"
+  },
+  "keywords": [
+    "moo-ui",
+    "unocss",
+    "vueuse"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "stub": "tsup --watch"
+  },
+  "dependencies": {
+    "@moo-ui/components": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

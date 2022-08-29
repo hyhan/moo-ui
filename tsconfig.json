@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "types": ["node", "vite/client"],
+    "paths": {
+      "moo-ui": ["./packages/moo-ui/src/index.ts"],
+      "@moo-ui/components": ["./packages/components/index.ts"],
+      "@moo-ui/utils": ["./packages/utils/index.ts"],
+      "@moo-ui/preset": ["./packages/preset/src/index.ts"]
+    }
+  },
+  "exclude": ["**/dist/**", "**/node_modules/**", "**/test/dts/**", "**/playground/**", "**/packages/components/**"]
+}
