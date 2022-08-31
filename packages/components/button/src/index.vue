@@ -23,12 +23,12 @@ const onlyIcon = computed(() => slots.icon && !slots.default)
     v-bind="to && { href: to }"
     :disabled="isDisabled"
     :aria-disabled="isDisabled"
-    class="o-button-base"
+    class="m-button-base"
     :class="[
-      light ? 'o-button-light' : '',
-      text ? 'o-button-text' : '',
-      `o-button-${size}`,
-      isDisabled ? 'o-disabled' : 'o-transition o-button-hover o-button-active',
+      light ? 'm-button-light' : '',
+      text ? 'm-button-text' : '',
+      `m-button-${size}`,
+      isDisabled ? 'm-disabled' : 'm-transition m-button-hover m-button-active',
       onlyIcon && 'aspect-square px-0',
     ]"
   >

@@ -8,5 +8,4 @@ export default defineConfig({
     presetUno(),
     presetMoo(),
   ],
-  safelist: [['xs', 'sm', 'md', 'lg'].map(s => [`o-button-${s}`, `o-avatar-${s}`, `o-avatar-group-${s}`, `o-card-${s}`])].flat(2) as string[],
 })
