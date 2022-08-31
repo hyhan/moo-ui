@@ -7,6 +7,7 @@ interface IButtonProps {
   size?: SizeType
   disabled?: boolean
   loading?: boolean
+  icon?: string
 }
 
 const props = withDefaults(defineProps<IButtonProps>(), {
@@ -14,7 +15,7 @@ const props = withDefaults(defineProps<IButtonProps>(), {
 })
 const slots = useSlots()
 const isDisabled = computed(() => props.loading || props.disabled)
-const onlyIcon = computed(() => slots.icon && !slots.default)
+const onlyIcon = computed(() => (slots.icon || props.icon) && !slots.default)
 </script>
 
 <template>
@@ -33,6 +34,7 @@ const onlyIcon = computed(() => slots.icon && !slots.default)
     ]"
   >
     <div v-if="loading" i-carbon-circle-dash animate-spin />
+    <MIcon v-else-if="icon" :name="icon" />
     <slot v-else name="icon" />
     <slot />
   </component>

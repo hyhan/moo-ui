@@ -4,7 +4,7 @@
 <template>
   <div o-white title="Icon">
     <div grid="~ cols-7 gap-4" un-children="text-6">
-      <m-icon o-primary name="i-carbon-letter-aa" />
+      <m-icon o="primary" name="i-carbon-letter-aa" />
       <m-icon o-secondary name="i-carbon-letter-bb" />
       <m-icon o-success name="i-carbon-letter-cc" />
       <m-icon o-warning name="i-carbon-letter-dd" />

@@ -14,7 +14,7 @@ const startLoading = () => {
   <div o="white" title="Button">
     <div space-y-2>
       <div fsc gap-2>
-        <MButton o="primary">
+        <MButton class="o-primary">
           Primary
         </MButton>
         <MButton o="secondary">
@@ -124,10 +124,7 @@ const startLoading = () => {
           </template>
           Share
         </MButton>
-        <MButton o="success">
-          <template #icon>
-            <div i-carbon-logo-wechat />
-          </template>
+        <MButton o="success" icon="i-carbon-logo-wechat">
           WeChat
         </MButton>
         <MButton o="error">

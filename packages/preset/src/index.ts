@@ -42,6 +42,7 @@ export function presetMoo(): Preset {
         /^m-(.*)$/,
         ([, body]: string[], { theme }: RuleContext<Theme>) => {
           const color = parseColor(body, theme)
+
           if (color?.cssColor?.type === 'rgb' && color.cssColor.components) {
             return {
               '--moo-c-context': `${color.cssColor.components.join(',')}`,
@@ -61,7 +62,7 @@ export function presetMoo(): Preset {
       [
         'm-disabled',
         {
-          opacity: 0.4,
+          opacity: 0.6,
           cursor: 'not-allowed',
         },
       ],
