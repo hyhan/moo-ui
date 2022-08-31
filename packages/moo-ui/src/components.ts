@@ -1,5 +1,5 @@
-import { MButton, MIcon } from '@moo-ui/components'
+import { MButton, MIcon, MInput } from '@moo-ui/components'
 
 import type { Plugin } from 'vue'
 
-export default [MButton, MIcon] as Plugin[]
+export default [MButton, MIcon, MInput] as Plugin[]

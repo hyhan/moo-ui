@@ -4,6 +4,7 @@ declare global {
   const EffectScope: typeof import('vue')['EffectScope']
   const MButton: typeof import('moo-ui')['MButton']
   const MIcon: typeof import('moo-ui')['MIcon']
+  const MInput: typeof import('moo-ui')['MInput']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const computed: typeof import('vue')['computed']
@@ -267,6 +268,7 @@ declare module '@vue/runtime-core' {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly MButton: UnwrapRef<typeof import('moo-ui')['MButton']>
     readonly MIcon: UnwrapRef<typeof import('moo-ui')['MIcon']>
+    readonly MInput: UnwrapRef<typeof import('moo-ui')['MInput']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>

@@ -1,9 +1,9 @@
 <script lang='ts' setup name="MIcon">
-interface IIconProps {
+interface IconProps {
   name: string
 }
 
-defineProps<IIconProps>()
+defineProps<IconProps>()
 </script>
 
 <template>

@@ -11,123 +11,123 @@ const startLoading = () => {
 </script>
 
 <template>
-  <div o="white" title="Button">
+  <div m="white" title="Button">
     <div space-y-2>
       <div fsc gap-2>
-        <MButton class="o-primary">
+        <MButton class="m-primary">
           Primary
         </MButton>
-        <MButton o="secondary">
+        <MButton m="secondary">
           Secondary
         </MButton>
-        <MButton o="success">
+        <MButton m="success">
           Success
         </MButton>
-        <MButton o="warning" rounded="full">
+        <MButton m="warning" rounded="full">
           Warning
         </MButton>
-        <MButton o="error" rounded="full">
+        <MButton m="error" rounded="full">
           Danger
         </MButton>
-        <MButton o="info" rounded="full">
+        <MButton m="info" rounded="full">
           Info
         </MButton>
       </div>
       <div fsc gap-2>
-        <MButton light o="primary">
+        <MButton light m="primary">
           Primary
         </MButton>
-        <MButton light o="secondary">
+        <MButton light m="secondary">
           Secondary
         </MButton>
-        <MButton o="success light">
+        <MButton m="success light">
           Success
         </MButton>
-        <MButton light o="warning dashed" rounded="full">
+        <MButton light m="warning dashed" rounded="full">
           Warning
         </MButton>
-        <MButton light o="error dashed" rounded="full">
+        <MButton light m="error dashed" rounded="full">
           Danger
         </MButton>
-        <MButton light o="info dashed" rounded="full">
+        <MButton light m="info dashed" rounded="full">
           Info
         </MButton>
       </div>
       <div fsc gap-2>
-        <MButton text o="primary">
+        <MButton text m="primary">
           Primary
         </MButton>
-        <MButton text o="secondary">
+        <MButton text m="secondary">
           Secondary
         </MButton>
-        <MButton o="success text">
+        <MButton m="success text">
           Success
         </MButton>
-        <MButton text o="warning" rounded="full">
+        <MButton text m="warning" rounded="full">
           Warning
         </MButton>
-        <MButton text o="error" rounded="full">
+        <MButton text m="error" rounded="full">
           Danger
         </MButton>
-        <MButton text o="info" rounded="full">
+        <MButton text m="info" rounded="full">
           Info
         </MButton>
       </div>
 
       <div fsc gap-2>
-        <MButton size="xs" o="primary">
+        <MButton size="xs" m="primary">
           Mini
         </MButton>
-        <MButton size="sm" o="secondary">
+        <MButton size="sm" m="secondary">
           Small
         </MButton>
-        <MButton size="md" o="success">
+        <MButton size="md" m="success">
           Medium
         </MButton>
-        <MButton size="lg" o="warning">
+        <MButton size="lg" m="warning">
           Large
         </MButton>
-        <MButton :to="githubUrl" o="primary">
+        <MButton :tm="githubUrl" m="primary">
           <template #icon>
             <div i-carbon-logo-github />
           </template>
         </MButton>
-        <MButton o="secondary">
+        <MButton m="secondary">
           <template #icon>
             <div i-carbon-share />
           </template>
         </MButton>
-        <MButton o="success" rounded-full>
+        <MButton m="success" rounded-full>
           <template #icon>
             <div i-carbon-logo-wechat />
           </template>
         </MButton>
-        <MButton o="error" rounded-full>
+        <MButton m="error" rounded-full>
           <template #icon>
             <div i-carbon-music />
           </template>
         </MButton>
-        <MButton o="info" :loading="loading" @click="startLoading">
+        <MButton m="info" :loading="loading" @click="startLoading">
           {{ loading ? 'Loading~~' : 'Start Load' }}
         </MButton>
       </div>
       <div fsc gap-2>
-        <MButton :to="githubUrl" o="primary">
+        <MButton :tm="githubUrl" m="primary">
           <template #icon>
             <div i-carbon-logo-github />
           </template>
           Github
         </MButton>
-        <MButton o="secondary">
+        <MButton m="secondary">
           <template #icon>
             <div i-carbon-share />
           </template>
           Share
         </MButton>
-        <MButton o="success" icon="i-carbon-logo-wechat">
+        <MButton m="success" icon="i-carbon-logo-wechat">
           WeChat
         </MButton>
-        <MButton o="error">
+        <MButton m="error">
           <template #icon>
             <div i-carbon-music />
           </template>
@@ -135,19 +135,19 @@ const startLoading = () => {
         </MButton>
       </div>
       <div fsc gap-2>
-        <MButton disabled o="primary">
+        <MButton disabled m="primary">
           Disabled
         </MButton>
-        <MButton disabled o="secondary">
+        <MButton disabled m="secondary">
           Disabled
         </MButton>
-        <MButton disabled o="success">
+        <MButton disabled m="success">
           Disabled
         </MButton>
-        <MButton disabled o="warning">
+        <MButton disabled m="warning">
           Disabled
         </MButton>
-        <MButton disabled o="error">
+        <MButton disabled m="error">
           Disabled
         </MButton>
       </div>

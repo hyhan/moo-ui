@@ -1,6 +1,6 @@
 <script setup lang="ts" name="M-Button">
 import type { SizeType } from '../../types'
-interface IButtonProps {
+interface ButtonProps {
   to?: string
   light?: boolean
   text?: boolean
@@ -10,7 +10,7 @@ interface IButtonProps {
   icon?: string
 }
 
-const props = withDefaults(defineProps<IButtonProps>(), {
+const props = withDefaults(defineProps<ButtonProps>(), {
   size: 'md',
 })
 const slots = useSlots()

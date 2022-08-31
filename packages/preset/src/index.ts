@@ -124,6 +124,10 @@ export function presetMoo(): Preset {
         // icon
         'm-icon-base': 'c-context text-md',
 
+        // input
+        'm-input-wrap': 'pr border c-context px-4 py-1 h-8 box-border text-2 shadow-md bg-white rounded overflow-hidden',
+        'm-input-focus': 'focus-border-context:64',
+        'm-input-base': 'w-full h-full box-border outline-none bg-white',
       },
       [/^o-avatar-group-(.*)$/, ([,s]) => {
         if (['xs', 'sm', 'md', 'lg'].includes(s)) {
@@ -144,6 +148,6 @@ export function presetMoo(): Preset {
         }
       }],
     ],
-    safelist: [['xs', 'sm', 'md', 'lg'].map(s => [`m-button-${s}`])].flat(2) as string[],
+    safelist: [['xs', 'sm', 'md', 'lg'].map(s => [`m-button-${s}`, `m-input-${s}`])].flat(2) as string[],
   }
 }

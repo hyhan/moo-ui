@@ -5,5 +5,6 @@
   "editor.formatOnSave": false,
   "cSpell.words": [
     "Attributify"
-  ]
+  ],
+  "unocss.root": "packages/components"
 }

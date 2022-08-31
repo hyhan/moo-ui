@@ -8,8 +8,10 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Bg: typeof import('./components/Bg.vue')['default']
+    copy: typeof import('./components/TheIcon copy.vue')['default']
     MButton: typeof import('moo-ui')['MButton']
     MIcon: typeof import('moo-ui')['MIcon']
+    MInput: typeof import('moo-ui')['MInput']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheAvatar: typeof import('./components/TheAvatar.vue')['default']
@@ -17,6 +19,7 @@ declare module '@vue/runtime-core' {
     TheCard: typeof import('./components/TheCard.vue')['default']
     TheHeader: typeof import('./components/layout/TheHeader.vue')['default']
     TheIcon: typeof import('./components/TheIcon.vue')['default']
+    TheInput: typeof import('./components/TheInput.vue')['default']
     TheSwitch: typeof import('./components/TheSwitch.vue')['default']
   }
 }
